@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: linux
+  main:
+    web-application-type: none
+
+logging:
+  level:
+    root: info
+
+cpolar:
+  username: ENC(prAhP4jfomsCzUQMb9jMW+LGNqC6tLjHV/D2+UJKeHI=)
+  password: ENC(5zENKL9zK0YWdH9OsJL1jfpoYHsAhf2M)
+  period: 300_000
+
+github:
+  remote-url: https://github.com/cuikeyao/video.git
+
+jasypt:
+  encryptor:
+    # 配置加密算法
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator

@@ -1,0 +1,22 @@
+spring:
+  main:
+    web-application-type: none
+
+kuma:
+  host: 127.0.0.1
+  port: 3001
+
+nginx:
+  name: Nginx
+  process: www/server/nginx/conf/nginx.conf
+  key: ENC(1m9JuVjFlayQSx1bm532AaiGUUdNdcOq)
+  heartbeat: 60_000   #单位：ms
+
+logging:
+  level:
+    root: info
+jasypt:
+  encryptor:
+    # 配置加密算法
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
